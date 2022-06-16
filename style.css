@@ -249,6 +249,154 @@ nav {
     transition: all 0.5s ease;;
 }
 
+/* Section - Otras birras */
+.otras-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.otras-texto {
+    padding: 50px;
+}
+
+.otras-imagines {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.otras-imagines div {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.birra1, .birra2, .birra3, .birra4  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.birra1 {
+    background: url(./img/heineken.png)  no-repeat center center;
+}
+
+.birra2 {
+    background: url(./img/grolsch.png)  no-repeat center center;
+}
+
+.birra3 {
+    background: url(./img/andes.png)  no-repeat center center;
+}   
+
+.birra4 {
+    background: url(./img/patagonia.png)  no-repeat center center;
+}
+
+.otras-imagines a {
+    display: none;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.otras-imagines div:hover {
+    /* opacity: 0.5; */
+    /* cursor: pointer; */
+    transition: all .5s;
+    background: url(./img/blanco.jpg) no-repeat center center;
+} 
+
+.otras-imagines div:hover > a {
+    display: block;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #071632;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer h2 {
+    /* text-align: center; */
+    font-size: 2rem;
+}
+
+.footer-texto-todo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-texto1, .footer-texto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-texto-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-texto-redes {
+    display: flex;
+    gap: 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer img {
+    width: 200px;
+    padding: 50px;
+}
+
 @media (min-width:1000px) {
     .menu-button {
         display: none;
@@ -304,5 +452,18 @@ nav {
     .menu .item-link:hover::after {
         transform-origin: bottom left;
         transform: scaleX(1);
+    }
+
+    .otras-imagines {
+        flex-direction: row;
+    }
+
+    .footer-imagen img {
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: row;
     }
 }
